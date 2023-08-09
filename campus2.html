@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    
 </head>
 <body>
     Hello Everyone
+    <h1>This is linking of html and css file</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem tempore alias provident non? Dolorem, consequuntur tenetur. Qui laudantium et saepe nemo, ipsum veniam recusandae quia ducimus, libero distinctio enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam laborum sed. Modi doloremque ut cumque, facere perferendis ratione asperiores distinctio hic doloribus. Ea necessitatibus porro dignissimos iure consectetur illum?</p>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script>
+    
+
 </body>
 </html>
