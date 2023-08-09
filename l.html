@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(14, 200, 233);">
+    <header>
+        <h1>Burj Al Arab</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>As of my last update in September 2021, one of the most famous and iconic hotels in the world is the Burj Al Arab in Dubai, United Arab Emirates.
+
+                The Burj Al Arab is a luxurious five-star hotel and is often referred to as the only seven-star hotel in the world due to its opulence and extravagance. It is located on its own artificial island just off the Jumeirah Beach and is designed in the shape of a sail of a traditional Arabian dhow, which makes it instantly recognizable on the Dubai skyline.</p>
+                <br>
+                <b>Some notable features of the Burj Al Arab include:</b>
+                <ol>
+                    <li>Height: Standing at 321 meters (1,053 feet), it is one of the tallest hotels in the world.</li>
+                    <li>Luxury Suites: The hotel offers 202 luxury duplex suites, with each suite featuring lavish amenities and stunning views of the Arabian Gulf.</li>
+                    <li>Helipad: The hotel's helipad, situated 210 meters above the ground, has been used by various celebrities and sports personalities for promotional events and stunts.</li>
+                    <li>Dining: The Burj Al Arab houses several world-class restaurants, including Al Muntaha (located 200 meters above the sea level), and the underwater-themed restaurant, Al Mahara.</li>
+                     <li>Service: The hotel is renowned for its exceptional and personalized service, with a ratio of seven staff members per suite, ensuring guests receive the utmost attention and care.</li>
+                     <li>Interior Design: The interior of the hotel is adorned with luxurious materials, including gold leaf, marble, and rich fabrics, creating an atmosphere of grandeur and extravagance.</li>
+                    <p>The Burj Al Arab has become an iconic symbol of Dubai's modernity and luxury, attracting visitors from all over the world. It's considered one of the most exclusive and expensive hotels, making it a favorite destination for celebrities, dignitaries, and luxury travelers.</p>
+                    
+                </ol>
+
+        </section>
+
+        <section>
+            <h2><button>Contact</button></h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Simple Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.getElementById("contactForm");
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                const formData = new FormData(contactForm);
+                const name = formData.get("name");
+                const email = formData.get("email");
+                const message = formData.get("message");
+                console.log("Name:", name);
+                console.log("Email:", email);
+                console.log("Message:", message);
+                // Here you can add code to submit the form data to a server or perform other actions.
+            });
+        });
+    </script>
+</body>
+
+</html>

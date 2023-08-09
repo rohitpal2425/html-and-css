@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    background-color: rgb(226, 7, 142);
+}
+span{
+    background-color: rgb(123, 10, 216);
+    /* padding: 5px; */
+    margin: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>About Form </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste accusantium sint exercitationem, repellat sit ipsam nihil sapiente, consequuntur ipsum odit unde? Beatae laboriosam magni dignissimos nostrum et quis consectetur!</p>
+    <!-- /<p><div>About</div></p> -->
+    <h1>This is simple form</h1>     <form action="">
+        Name: <input type="text" name="name"> <br><br>
+        Address: <input type="text" name="address"> <br><br>
+        Age: <input type="number" name="age"> <br> <br>
+        Email: <input type="email" name="email"> <br><br>
+        Password: <input type="password" name="password"> <br> <br>
+        <span><u>Gender: <br></u> </span>
+        Male:<input type="radio" name="gender" value="male">
+        Female:<input type="radio" name="gender" value="female">
+        Other:<input type="radio" name="gender" value="other">
+        <br>
+       <span><u>Hobbies</u></span> <br>
+        Dancing: <input type="checkbox" name="hobbies" value="dancing">
+        Singing: <input type="checkbox" name="hobbies" value="Singing">
+        Drawing: <input type="checkbox" name="hobbies" value="Drawing">
+        Football: <input type="checkbox" name="hobbies" value="Football">
+        <br>
+        faculty:
+        <select name="faculty" id="">
+            <option value="">CSIT</option>
+            <option value="">BIT</option>
+            <option value="">Physics</option>
+        </select> <br>
+        <p>Upload your your file</p> 
+        file: <input type="file" name="file"><br>
+        <!-- <p>Hide your data</p>
+        Hide: <input type="hidden" name="hide"> -->
+         <br><input type="submit" name="Submit" value="Submit"> <input type="reset" name="reset" value="reset">
+</body>
+</html>

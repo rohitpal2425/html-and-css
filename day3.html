@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>Lets Create Form </h2> <br>
+    <h5>Today we are going to create form</h5> <br>
+    <form action="backend.php">
+       <div>
+        Name: <input type="text" name="myname">
+       </div>
+       <br>
+       <div>
+        Roll: <input type="text" name="myroll">
+       </div>
+       <br>
+       <div>
+        Email: <input type="email" name="myemail">
+       </div>
+       <br>
+       <div>
+           Date:<input type="date" name="mydate" >
+           
+        </div>
+        <br>
+        <div>
+            Bonus<input type="number" name="mybonus" >
+            
+        </div>
+        <br>
+        <div>
+            Are you eligible<input type="checkbox" name="myegibility" checked>
+            
+        </div>
+        <br>
+        <div>
+            Gender:male <input type="radio" name="mygender"  >Female <input type="radio" name="mygender"> other <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Write About Yourself <br><textarea name="mytext"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Email: <input type="submit" value="submit now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div> 
+    </form>
+    <h1>Form Using <B>Lable </B> Tag:</h1>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myname" id="name">
+           </div>
+           <br>
+           <label for="roll">Roll</label>
+           <div>
+            <input type="text" name="myroll" id="roll">
+           </div>
+           <br>
+           <label for="email">Email</label>
+           <div>
+           <input type="email" name="myemail" id="email">
+           </div>
+           <br>
+           <label for="date">Date</label>
+           <div>
+               <input type="date" name="mydate" id="date" >
+            </div>
+            <br>
+            <label for="bonus">Bonus</label>
+            <div>
+                <input type="number" name="mybonus" id="bonus" >
+            </div>
+            <br>
+            <label for="eligible">Are you eligible:</label>
+            <div>
+                <input type="checkbox" name="myegibility" id="eligible">
+            </div>
+            <label for="gender">Gender:</label>
+            <div>
+                Male <input type="radio" name="mygender" id="gender"> Female <input type="radio" name="mygender" id="gender"> Other <input type="radio" name="mygender" id="gender">
+            </div>
+            <br>
+            <label for="about">Write About Yourself <br> </label>
+            <div>
+                <textarea name="mytext"  cols="30" rows="10" id="about"></textarea>
+            </div>
+            <br>
+            <label for="car">Car</label>
+            <div>
+                <select 
+                name="mycar" id="car">
+                <option value="indica" selected >Indica</option>
+                <option value="swift">Swift</option>
+                <option value="bmw">BMW</option>
+                </select>
+            </div>
+            <br>
+            <div>
+            <input type="submit" value="submit now">
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset Now">
+            </div>
+    </form>
+    
+</body>
+</html>
